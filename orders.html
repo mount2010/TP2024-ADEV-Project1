@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- OG tags https://ogp.me/ -->
+        <meta property="og:title" content="TP Canteen Ordering" />
+        <meta property="og:description" content="Preorder food from the TP canteen" />
+        <meta property="og:type" content="website" />
+
+        <title>TP Canteen Ordering</title>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+        <link rel="icon" type="image/x-icon" href="https://www.tp.edu.sg/etc.clientlibs/tp-web/clientlibs/clientlib-site/resources/images/favicon.png">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div id="mainContainer" class="container">
+            <header class="header noFlexShrink">
+                <div id="headerTitleBox">
+                    <img id="headerIcon" height="32" width="32" alt="Temasek Polytechnic icon" src="https://www.tp.edu.sg/etc.clientlibs/tp-web/clientlibs/clientlib-site/resources/images/favicon.png" />
+                    <h2 id="headerTitle">TP Canteen Ordering App</h2>
+                </div>
+                <div id="headerLinks">
+                    <a href="./index.html">Menu</a>
+                    <a href="./orders.html">My Orders</a>
+                </div>
+            </header>
+            <div class="marginWrapper noFlexShrink">
+                <main id="main">
+                    <h2 id="westernFoodStall">My Orders</h2>
+                    <div class="cardList verticallySpaced">
+                        <div class="card noFlexShrink borderGreen">
+                            <div class="cardContent">
+                                <h3>Order ID #3532</h3>
+                                <p>$15.00</p>
+                                <ul>
+                                    <li>Fish and Chips</li>
+                                    <li>Chicken Rice</li>
+                                    <li>Spaghetti</li>
+                                </ul>
+                                <p class="thin tinyText"><span class="iconClock">⏲️</span>ETA 12:32 PM</p>
+                                <p class="textGreen">Ready</p>
+                                <p>Pickup at: Western Food</p>
+                            </div>
+                        </div>
+                        <div class="card noFlexShrink borderYellow">
+                            <div class="cardContent">
+                                <h3>Order ID #3536</h3>
+                                <p>$1.50</p>
+                                <ul>
+                                    <li>Hot Tea</li>
+                                </ul>
+                                <p class="thin tinyText"><span class="iconClock">⏲️</span>ETA 12:45 PM</p>
+                                <p class="textYellow">Preparing</p>
+                            </div>
+                            <button class="button buttonDanger">Cancel/Refund</button>
+                        </div>
+                    </div>
+
+                    <h2 id="westernFoodStall">My Order History</h2>
+                    <div class="cardList verticallySpaced">
+                        <div class="card noFlexShrink">
+                            <div class="cardContent">
+                                <h3>Order ID #1337</h3>
+                                <p>$5.00</p>
+                                <ul>
+                                    <li>Fish and Chips</li>
+                                </ul>
+                                <p class="thin"><span class="iconCalendar">📅</span>2024-09-11</p>
+                            </div>
+                        </div>
+                        <div class="card noFlexShrink">
+                            <div class="cardContent">
+                                <h3>Order ID #3300</h3>
+                                <p>$4.00</p>
+                                <ul>
+                                    <li>Chicken</li>
+                                </ul>
+                                <p class="thin"><span class="iconCalendar">📅</span>2024-09-11</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <footer class="noFlexShrink" id="footer">
+                <p>Edwin Goh | 2024 Temasek Polytechnic ADEV Project</p>
+                <br />  
+                <p>Images used with permission/free license</p>
+                <p id="cat" onclick="alert('Meow!')">😸</p>
+            </footer>
+        </div>
+    </body>
+</html>

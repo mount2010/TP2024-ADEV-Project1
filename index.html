@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- OG tags https://ogp.me/ -->
+        <meta property="og:title" content="TP Canteen Ordering" />
+        <meta property="og:description" content="Preorder food from the TP canteen" />
+        <meta property="og:type" content="website" />
+
+        <title>TP Canteen Ordering</title>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        
+        <link rel="icon" type="image/x-icon" href="https://www.tp.edu.sg/etc.clientlibs/tp-web/clientlibs/clientlib-site/resources/images/favicon.png">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div id="mainContainer" class="container">
+            <header class="header noFlexShrink">
+                <div id="headerTitleBox">
+                    <img id="headerIcon" height="32" width="32" alt="Temasek Polytechnic icon" src="https://www.tp.edu.sg/etc.clientlibs/tp-web/clientlibs/clientlib-site/resources/images/favicon.png" />
+                    <h2 id="headerTitle">TP Canteen Ordering App</h2>
+                </div>
+                <div id="headerLinks">
+                    <a href="./index.html">Menu</a>
+                    <a href="./orders.html">My Orders</a>
+                </div>
+            </header>
+            <div class="marginWrapper noFlexShrink">
+                <main id="main">
+                    <div class="fullWidth scrollBox" id="jumpTo">
+                        <b style="margin-right: 10px">Jump to:</b>
+                        <a class="button buttonSecondary" href="#westernFoodStall">Western Food</a>
+                        <a class="button buttonSecondary" href="#italianFoodStall">Italian Food</a>
+                        <a class="button buttonSecondary" href="#roastedDelightsStall">Roasted Delights</a>
+                    </div>
+
+                    <form class="box verticallySpaced" id="filtersBox">
+                        <h2>Filter</h2>
+                        <input class="searchBar" type="text" name="mealName" placeholder="Search Meals" />
+                        <br />
+
+                        <label id="filterDietaryRestriction">
+                            Dietary Restriction 
+                            <select name="dietaryRestriction">
+                                <option value="none">None</option>
+                                <option value="halal">Halal</option>
+                                <option value="vegetarian">Vegetarian</option>
+                                <option value="vegan">Vegan</option>
+                                <option value="kosher">Kosher</option>
+                            </select>
+                        </label>
+                        <br />
+
+                        <label>
+                            All
+                            <input type="radio" id="all" name="category" value="all" checked />
+                        </label>
+
+                        <label>
+                            Western 
+                            <input type="radio" id="western" name="category" value="western" />
+                        </label>
+                        
+                        <label>
+                            Economy 
+                            <input type="radio" id="economy" name="category" value="economy" />
+                        </label>
+
+                        <label>
+                            Japanese
+                            <input type="radio" id="japanese" name="category" value="japanese" />
+                        </label>
+
+                        <label>
+                            Malay
+                            <input type="radio" id="malay" name="category" value="malay" />
+                        </label>
+
+                        <div class="fullWidth flex justifyRight">
+                            <input id="filterSubmit" class="button buttonPrimary" type="submit" value="Filter" />
+                        </div>
+                    </form>
+
+                    <h2 id="westernFoodStall">Western Food</h2>
+                    <p>Halal</p>
+                    <div class="cardList verticallySpaced">
+                        <div class="card noFlexShrink">
+                            <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg" alt="An image of food" />
+                            <div class="cardContent">
+                                <h3>Fish and Chips</h3>
+                                <p class="textGold">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            </div>
+                            <button class="button buttonDisabled">Out of Stock</button>
+                        </div>
+                        <div class="card noFlexShrink">
+                            <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="An image of food" />
+                            <div class="cardContent">
+                                <h3>Spaghetti</h3>
+                                <p class="textGold">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            </div>
+                            <button class="button buttonAddToCart buttonSecondary">$4.99<br /><span class="tinyText">Students: $4.70</span></button>
+                        </div>
+                        <div class="card noFlexShrink">
+                            <img src="https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="An image of food" />
+                            <div class="cardContent">
+                                <h3>Chicken</h3>
+                                <p class="textGold">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                                <p class="textYellow ">ℹ️ 5 left</p>
+                            </div>
+                            <button class="button buttonAddToCart buttonSecondary">$8.90</button>
+                        </div>
+                        <div class="card noFlexShrink">
+                            <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg" alt="An image of food" />
+                            <div class="cardContent">
+                                <h3>Chicken and Chips</h3>
+                                <p class="textGold">&#9733;&#9733;&#9734;&#9734;&#9734;</p>
+                            </div>
+                            <button class="button buttonDisabled">Out of Stock</button>
+                        </div>
+                        <div class="card noFlexShrink">
+                            <img src="https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="An image of food" />
+                            <div class="cardContent">
+                                <h3>Chicken and Pasta</h3>
+                                <p class="textGold">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            </div>
+                            <button class="button buttonAddToCart buttonSecondary">$6.00<br /><span class="tinyText">Students: $5.80</span></button>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <h2 id="italianFoodStall">Italian Food</h2>
+                    <div class="cardList verticallySpaced">
+                        <div class="card noFlexShrink">
+                            <img src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="An image of food" />
+                            <div class="cardContent">
+                                <h3>Italian Sandwich</h3>
+                                <p class="textGold">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                            </div>
+                            <button class="button buttonAddToCart buttonSecondary">$4.50</button>
+                        </div>
+                        <div class="card noFlexShrink">
+                            <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg" alt="An image of food" />
+                            <div class="cardContent">
+                                <h3>Carbonana</h3>
+                                <p class="textGold">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                            </div>
+                            <button class="button buttonAddToCart buttonSecondary">$5.00</button>
+                        </div>
+                        <div class="card noFlexShrink">
+                            <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg" alt="An image of food" />
+                            <div class="cardContent">
+                                <h3>Cheese Pizza</h3>
+                                <p class="textGold">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                            </div>
+                            <button class="button buttonAddToCart buttonSecondary">$4.00</button>
+                        </div>
+                        <div class="card noFlexShrink">
+                            <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg" alt="An image of food" />
+                            <div class="cardContent">
+                                <h3>Spaghetti</h3>
+                                <p class="textGold">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            </div>
+                            <button class="button buttonDisabled">Out of Stock</button>
+                        </div>
+                        <div class="card noFlexShrink">
+                            <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg" alt="An image of food" />
+                            <div class="cardContent">
+                                <h3>Hawaiian Pizza</h3>
+                                <p class="textGold">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                            </div>
+                            <button class="button buttonDisabled">Out of Stock</button>
+                        </div>
+                        <div class="card noFlexShrink">
+                            <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg" alt="An image of food" />
+                            <div class="cardContent">
+                                <h3>Maccaroni</h3>
+                                <p class="textGold">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                            </div>
+                            <button class="button buttonDisabled">Out of Stock</button>
+                        </div>
+                        <div class="card noFlexShrink">
+                            <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg" alt="An image of food" />
+                            <div class="cardContent">
+                                <h3>Meat Pizza</h3>
+                                <p class="textGold">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                            </div>
+                            <button class="button buttonAddToCart buttonSecondary">$3.50</button>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <h2 id="roastedDelightsStall">Roasted Delights</h2>
+                    <div class="cardList verticallySpaced">
+                        <div class="card noFlexShrink">
+                            <img src="https://images.pexels.com/photos/21822134/pexels-photo-21822134/free-photo-of-chicken-with-rice.jpeg" alt="An image of food" />
+                            <div class="cardContent">
+                                <h3>Roasted Pork Rice</h3>
+                                <p class="textGold">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                            </div>
+                            <button class="button buttonAddToCart buttonSecondary">$3.30<br /><span class="tinyText">Students: $3.10</span></button>
+                        </div>
+                        <div class="card noFlexShrink">
+                            <img src="https://images.pexels.com/photos/21822134/pexels-photo-21822134/free-photo-of-chicken-with-rice.jpeg" alt="An image of food" />
+                            <div class="cardContent">
+                                <h3>Chicken Rice</h3>
+                                <p class="textGold">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                            </div>
+                            <button class="button buttonDisabled">Out of Stock</button>
+                        </div>
+                        <div class="card noFlexShrink">
+                            <img src="https://images.pexels.com/photos/21822134/pexels-photo-21822134/free-photo-of-chicken-with-rice.jpeg" alt="An image of food" />
+                            <div class="cardContent">
+                                <h3>Chicken Rice</h3>
+                                <p class="textYellow ">ℹ️ 3 left</p>
+                                <p class="textGold">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            </div>
+                            <button class="button buttonAddToCart buttonSecondary">$3.00</button>
+                        </div>
+                        <div class="card noFlexShrink">
+                            <img src="https://images.pexels.com/photos/21822134/pexels-photo-21822134/free-photo-of-chicken-with-rice.jpeg" alt="An image of food" />
+                            <div class="cardContent">
+                                <h3>Chicken Rice</h3>
+                                <p class="textGold">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                            </div>
+                            <button class="button buttonAddToCart buttonSecondary">$3.00</button>
+                        </div>
+                        <div class="card noFlexShrink">
+                            <img src="https://images.pexels.com/photos/21822134/pexels-photo-21822134/free-photo-of-chicken-with-rice.jpeg" alt="An image of food" />
+                            <div class="cardContent">
+                                <h3>Chicken Rice</h3>
+                                <p class="textGold">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                            </div>
+                            <button class="button buttonAddToCart buttonSecondary">$3.00</button>
+                        </div>
+                        <div class="card noFlexShrink">
+                            <img src="https://images.pexels.com/photos/21822134/pexels-photo-21822134/free-photo-of-chicken-with-rice.jpeg" alt="An image of food" />
+                            <div class="cardContent">
+                                <h3>Chicken Rice</h3>
+                                <p class="textGold">&#9733;&#9734;&#9734;&#9734;&#9734;</p>
+                            </div>
+                            <button class="button buttonAddToCart buttonSecondary">$3.00</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <footer class="noFlexShrink" id="footer">
+                <p>Edwin Goh | 2024 Temasek Polytechnic ADEV Project</p>
+                <br />  
+                <p>Images used with permission/free license</p>
+                <p class="thin">Images mostly from Pexels, stop going "free image" on your website for SEO thanks.</p>
+                <p id="cat" onclick="alert('Meow!')">😸</p>
+            </footer>
+        </div>
+    </body>
+    <script>
+        const addToCartButtons = document.querySelectorAll(".buttonAddToCart")
+        addToCartButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                alert("Added to cart!")
+            })
+        })
+    </script>
+</html>
